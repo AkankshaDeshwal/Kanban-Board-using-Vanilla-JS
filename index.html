@@ -17,12 +17,12 @@
         <!-- Main Kanban Board Area -->
          <div class="board">
             <!-- To do section -->
-             <div id="todo" class="taskColumn">
+             <div class="taskColumn">
                 <div class="header">
                     <span>To-Do</span>
                     <span id="toDoCount">4</span>
                 </div>
-                <div class="taskArea">
+                <div class="taskArea" id="todo">
                     <!-- Task card -->
                      <!-- Task 1 -->
                     <div class="task" draggable="true">
@@ -36,7 +36,7 @@
 
                     <!-- Task 2 -->
                     <div class="task" draggable="true">
-                        <h2>Task 1</h2>
+                        <h2>Task 2</h2>
                         <div class="des">
                             <span>Task description will come here</span>
                             <button id="deleteTaskButton">Delete</button>
@@ -49,29 +49,31 @@
 
              </div>
             <!-- In-progress section -->
-             <div id="inProgress" class="taskColumn">
+             <div class="taskColumn">
                 <div class="header">
                     <span>In-Progress</span>
                     <span id="inProgressCount">4</span>
                 </div>
-                <div class="taskArea">
+                <div class="taskArea" id="inProgress">
 
                 </div>
 
              </div>
             <!-- Done section -->
-             <div id="done" class="taskColumn">
+             <div  class="taskColumn">
                 <div class="header">
                     <span>Done</span>
                     <span id="doneCount">4</span>
                 </div>
-                <div class="taskArea">
+                <div class="taskArea" id="done">
                     
                 </div>
 
              </div>
          </div>
     </div>
+
+    <script src="./script.js"></script>
     
 </body>
 </html>
