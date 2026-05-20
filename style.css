@@ -115,6 +115,10 @@ button:hover {
     cursor: grab;
 }
 
+.task.draggedTask {
+    opacity: 1;
+}
+
 .task div {
     display: flex;
     align-items: flex-end;
