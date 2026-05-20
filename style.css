@@ -1,0 +1,132 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    /* Background colors */
+     --color-bg: #090d14;
+     --color-column: #111827;
+     --color-card: #1f2937;            
+  --color-card-hover: #374151;      
+
+  /* Text Color */
+   --color-text: #f8fafc;
+
+   /* Button color */
+   --btn-primary-bg: #3b82f6;
+  --btn-primary-hover: #2563eb;
+
+  /* Delete Button color */
+   --btn-secondary-bg: #ee6945;
+  --btn-secondary-hover: #e7490a;
+
+   /* Border color */
+   --color-border: #334155;
+   --color-border-light: #475569;
+
+   /* Border radius */
+   --border-radius-s:3px;
+   --border-radius-m:5px;
+
+   /* padding */
+   --padding-xs:0.5rem;
+   --padding-s:0.75rem;
+   --padding-m:1rem;
+   --padding-l:1.25rem;
+   --padding-xl:1.5rem;
+   --padding-xxl:2rem;
+
+}
+
+.container {
+    width:100%;
+    height:100vh;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    color:var(--color-text);
+    padding:var(--padding-l);
+    gap:var(--padding-xl);
+}
+
+.header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5%;
+    padding: var(--padding-s);
+}
+
+/* Button styling */
+button {
+    padding: var(--padding-xs) var(--padding-s);
+    background-color: var(--btn-primary-bg);
+    border-radius: var(--border-radius-m);
+    color:var(--color-text);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:90%;
+
+}
+
+.taskColumn {
+    
+    width:32%;
+    padding:var(--padding-s);
+    height:100%;
+    background-color: var(--color-column);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.taskColumn.hoverOver {
+    scale:1.05;
+}
+
+.taskArea {
+    height:90%;
+    padding: var(--padding-s);
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+/* Task card styling */
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-m);
+    background-color: var(--color-card);
+    border-radius: var(--border-radius-s);
+    cursor: grab;
+}
+
+.task div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.task button {
+    background-color: var(--btn-secondary-bg);
+    border: none;
+    outline: none;
+}
+
+.task button:hover {
+    background-color: var(--btn-secondary-hover);
+}

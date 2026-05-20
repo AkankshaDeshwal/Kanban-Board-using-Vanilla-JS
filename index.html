@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>KANBAN BOARD</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>KANBAN BOARD</h1>
+            <button id="addTaskButton">ADD TASK</button>
+        </div>
+
+        <!-- Main Kanban Board Area -->
+         <div class="board">
+            <!-- To do section -->
+             <div class="toDoBox taskColumn">
+                <div class="header">
+                    <span>To-Do</span>
+                    <span id="toDoCount">4</span>
+                </div>
+                <div class="taskArea">
+                    <!-- Task card -->
+                     <!-- Task 1 -->
+                    <div class="task" draggable="true">
+                        <h2>Task 1</h2>
+                        <div class="des">
+                            <span>Task description will come here</span>
+                            <button id="deleteTaskButton">Delete</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Task 2 -->
+                    <div class="task" draggable="true">
+                        <h2>Task 1</h2>
+                        <div class="des">
+                            <span>Task description will come here</span>
+                            <button id="deleteTaskButton">Delete</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+             </div>
+            <!-- In-progress section -->
+             <div class="inProgressBox taskColumn">
+                <div class="header">
+                    <span>In-Progress</span>
+                    <span id="inProgressCount">4</span>
+                </div>
+                <div class="taskArea">
+
+                </div>
+
+             </div>
+            <!-- Done section -->
+             <div class="doneBox taskColumn">
+                <div class="header">
+                    <span>Done</span>
+                    <span id="doneCount">4</span>
+                </div>
+                <div class="taskArea">
+                    
+                </div>
+
+             </div>
+         </div>
+    </div>
+    
+</body>
+</html>
