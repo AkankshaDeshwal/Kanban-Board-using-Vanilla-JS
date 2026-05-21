@@ -11,25 +11,25 @@
         <!-- Header -->
         <div class="header">
             <h1>KANBAN BOARD</h1>
-            <button id="addTaskButton">ADD TASK</button>
+            <button id="toggleModalButton">ADD NEW TASK</button>
         </div>
 
         <!-- Main Kanban Board Area -->
          <div class="board">
             <!-- To do section -->
-             <div class="taskColumn">
+             <div class="taskColumn" id="todo">
                 <div class="header">
                     <span>To-Do</span>
-                    <span id="toDoCount">4</span>
+                    <span class="count">4</span>
                 </div>
-                <div class="taskArea" id="todo">
+                
                     <!-- Task card -->
                      <!-- Task 1 -->
                     <div class="task" draggable="true">
                         <h2>Task 1</h2>
-                        <div class="des">
+                        <div >
                             <span>Task description will come here</span>
-                            <button id="deleteTaskButton">Delete</button>
+                            <button class="deleteTaskButton">Delete</button>
 
                         </div>
                     </div>
@@ -45,33 +45,39 @@
                     </div>
 
 
-                </div>
+                
 
              </div>
             <!-- In-progress section -->
-             <div class="taskColumn">
+             <div class="taskColumn" id="inProgress">
                 <div class="header">
                     <span>In-Progress</span>
-                    <span id="inProgressCount">4</span>
+                    <span class="count">4</span>
                 </div>
-                <div class="taskArea" id="inProgress">
-
-                </div>
+                
 
              </div>
             <!-- Done section -->
-             <div  class="taskColumn">
+             <div  class="taskColumn" id="done">
                 <div class="header">
                     <span>Done</span>
-                    <span id="doneCount">4</span>
+                    <span class="count">4</span>
                 </div>
-                <div class="taskArea" id="done">
-                    
-                </div>
+               
 
              </div>
          </div>
     </div>
+
+    <!-- Modal -->
+     <div class="modal">
+        <div class="bg"></div>
+        <div class="center">
+            <input type="text" placeholder="Enter task name" id ="taskName"/>
+            <textarea placeholder="Enter task description here..." id="taskDescription"></textarea>
+            <button id="addTaskButton">Add task</button>
+        </div>
+     </div>
 
     <script src="./script.js"></script>
     

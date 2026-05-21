@@ -10,7 +10,8 @@
      --color-bg: #090d14;
      --color-column: #111827;
      --color-card: #1f2937;            
-  --color-card-hover: #374151;      
+  --color-card-hover: #374151;    
+  --color-modal:  #071023;
 
   /* Text Color */
    --color-text: #f8fafc;
@@ -39,6 +40,7 @@
    --padding-xl:1.5rem;
    --padding-xxl:2rem;
 
+     
 }
 
 .container {
@@ -90,6 +92,9 @@ button:hover {
     height:100%;
     background-color: var(--color-column);
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 
 .taskColumn.hoverOver {
@@ -133,4 +138,54 @@ button:hover {
 
 .task button:hover {
     background-color: var(--btn-secondary-hover);
+}
+
+/* Modal styling */
+.modal {
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display:flex;
+}
+
+.center {
+    display: flex;
+    width:25%;
+    flex-direction: column;
+    padding: var(--padding-xxl);
+    gap:var(--padding-m);
+    z-index: 10;
+    background-color: var(--color-modal);
+    border-radius: var(--border-radius-m);
+}
+
+.center input, .center textarea, .center button{
+    border: none;
+    outline:none;
+    padding: var(--padding-s) var(--padding-m);
+    
+    color:var(--color-text);
+    border-radius: var(--border-radius-s);
+}
+
+.center input, .center textarea{
+    background-color: var(--color-card);
+}
+
+.bg {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #1f29373b;
+    backdrop-filter: blur(5px);
 }
