@@ -69,6 +69,7 @@
 .nav {
     position: sticky;
     top:0;
+    background-color: var(--color-bg);
 }
 
 /* Button styling */
@@ -90,6 +91,8 @@ button:hover {
     align-items: stretch;
     flex:1;
 }
+
+
 
 .taskColumn {
     
@@ -188,4 +191,19 @@ button:hover {
     height:100%;
     background-color: #1f29373b;
     backdrop-filter: blur(5px);
+}
+/* Optimization for mobile screens */
+@media only screen and (max-width: 600px) {
+    .board {
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .taskColumn {
+        width:100%;
+    }
+
+    .center {
+        width:80%;
+    }
 }
