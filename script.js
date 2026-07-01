@@ -180,6 +180,7 @@ function deleteTask(e){
     let task = e.target.closest('.task')
     task.remove()
     updateLocalStorage()
+    updateCount()
 
 }
 
