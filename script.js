@@ -41,9 +41,10 @@ function showPreviousTasks() {
             })
         }
 
-        //update count- number of tasks in each column
-        updateCount();
+        
     }
+    //update count- number of tasks in each column
+        updateCount();
 }
 
 //Create task function to create and render dom element for each task
@@ -151,7 +152,7 @@ function updateCount() {
         //     }
         // })
        
-        count.innerText = tasks.length
+        count.innerText = tasks.length?tasks.length:0
     })
     // localStorage.setItem('tasks', JSON.stringify(taskData))
 }
