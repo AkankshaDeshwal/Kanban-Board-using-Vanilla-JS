@@ -37,15 +37,15 @@ Concepts Demonstrated:
 Screenshots:
 
 Empty Kanban Board:
-![alt text](image.png)
+![alt text](\screenshots\kanban_add_task.png)
 <br>
 
 Add New Task:
-![alt text](image-1.png)
+![alt text](\screenshots\kanban_add_task.png)
 <br>
 
 Drag & Drop Tasks:
-![alt text](image-2.png)
+![alt text](\screenshots\kanban_drag_and_drop.png)
 <br>
 
 Future Improvements:
