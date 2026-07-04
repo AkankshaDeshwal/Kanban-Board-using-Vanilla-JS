@@ -47,3 +47,9 @@ Add New Task:
 Drag & Drop Tasks:
 ![alt text](image-2.png)
 <br>
+
+Future Improvements:
+
+- Edit existing tasks
+- Task priorities and labels
+- Due dates
